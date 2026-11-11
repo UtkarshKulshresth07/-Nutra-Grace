@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>NutraGrace – Plant-powered liquid capsule supplements</title>
+<meta name="description" content="NutraGrace dietary supplements: full product catalogue with ingredients, usage and images. Order on NutraCart, the official online store.">
+<meta name="theme-color" content="#1f3d2b">
+<link rel="icon" href="/logo.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/icon-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="NutraGrace">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="manifest" href="/manifest.json">
+<link rel="preload" href="/img/hero.jpg" as="image">
+<link rel="stylesheet" href="/styles.css">
+<script>try{var t=localStorage.getItem("ng_theme");if(!t&&matchMedia("(prefers-color-scheme: dark)").matches)t="dark";if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body>
+
+<!-- Welcome note (shown on first visit) -->
+<div class="welcome" id="welcome" role="dialog" aria-modal="true" aria-labelledby="wTitle" hidden>
+  <div class="welcome-card">
+    <img src="/logo.svg" alt="" width="84" height="84" class="welcome-logo">
+    <p class="eyebrow">Namaste &amp; welcome to</p>
+    <h1 id="wTitle">Nutra<span>Grace</span></h1>
+    <p class="welcome-text">Plant-powered wellness from India's first liquid-filled capsule maker. Browse every product with full details and pictures, and order on NutraCart, our official online store.</p>
+    <ul class="welcome-steps">
+      <li><b>1</b> Choose a product</li>
+      <li><b>2</b> See full details</li>
+      <li><b>3</b> Order on NutraCart</li>
+    </ul>
+    <button class="btn big" id="wGo" type="button">Start exploring →</button>
+  </div>
+</div>
+
+<header class="top">
+  <button class="icon-btn" id="backBtn" type="button" aria-label="Go back" hidden>
+    <svg viewBox="0 0 24 24" width="22" height="22"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+  <a href="#/" class="brand" aria-label="NutraGrace home">
+    <img src="/logo.svg" alt="" width="38" height="38">
+    <span><b>Nutra<i>Grace</i></b><small>Liquid-filled wellness</small></span>
+  </a>
+  <div class="top-actions">
+    <button class="icon-btn" id="themeBtn" type="button" aria-label="Change theme">◐</button>
+  </div>
+</header>
+
+<main id="view" tabindex="-1"></main>
+
+<nav class="tabs" id="tabs" aria-label="Main">
+  <a href="#/" data-tab="home"><span>🏠</span>Home</a>
+  <a href="#/products" data-tab="products"><span>🌿</span>Products</a>
+  <a href="https://www.nutracart.com/" target="_blank" rel="noopener"><span>🛍️</span>Shop</a>
+  <a href="#/about" data-tab="about"><span>ℹ️</span>About</a>
+</nav>
+
+<!-- Install help (shown when the browser has no one-tap install, e.g. iPhone) -->
+<div class="welcome" id="installHelp" role="dialog" aria-modal="true" aria-labelledby="iTitle" hidden>
+  <div class="welcome-card">
+    <img src="/logo.svg" alt="" width="64" height="64" class="welcome-logo">
+    <h2 id="iTitle">Install NutraGrace app</h2>
+    <ol class="install-steps" id="installIos">
+      <li>Tap the <b>Share</b> button <span aria-hidden="true">⬆︎</span> at the bottom of Safari</li>
+      <li>Scroll down and tap <b>Add to Home Screen</b></li>
+      <li>Tap <b>Add</b> — the NutraGrace icon appears on your home screen</li>
+    </ol>
+    <ol class="install-steps" id="installOther">
+      <li>Open this site in <b>Chrome</b> (or Edge / Samsung Internet)</li>
+      <li>Tap the <b>⋮ menu</b> at the top right</li>
+      <li>Tap <b>Install app</b> or <b>Add to Home screen</b></li>
+    </ol>
+    <button class="btn big" type="button" data-closeinstall>Got it</button>
+  </div>
+</div>
+
+<!-- Share the app (works on iPhone and Android) -->
+<div class="welcome" id="shareSheet" role="dialog" aria-modal="true" aria-labelledby="sTitle" hidden>
+  <div class="welcome-card">
+    <img src="/logo.svg" alt="" width="64" height="64" class="welcome-logo">
+    <h2 id="sTitle">Share NutraGrace app</h2>
+    <p class="welcome-text">Send this link to family &amp; friends. They open it and install the app on iPhone or Android — no app store needed.</p>
+    <div class="share-link"><input id="shareUrl" type="text" readonly aria-label="App link"><button class="btn" type="button" data-copylink>Copy</button></div>
+    <div class="share-grid">
+      <a class="share-opt wa" id="shareWa" target="_blank" rel="noopener"><i>🟢</i>WhatsApp</a>
+      <a class="share-opt" id="shareSms"><i>💬</i>SMS</a>
+      <a class="share-opt" id="shareMail"><i>✉️</i>Email</a>
+      <button class="share-opt" type="button" id="shareMore" data-nativeshare hidden><i>⋯</i>More</button>
+    </div>
+    <details class="share-how"><summary>How your friend installs it</summary>
+      <p><b>iPhone / iPad:</b> open the link in <b>Safari</b> → tap <b>Share ⬆︎</b> → <b>Add to Home Screen</b> → <b>Add</b>.</p>
+      <p><b>Android:</b> open the link in <b>Chrome</b> → tap <b>Install</b> (or <b>⋮ menu → Install app / Add to Home screen</b>).</p>
+    </details>
+    <button class="btn ghost big" type="button" data-closeshare style="margin-top:12px">Close</button>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite" hidden>
+  <span id="toastMsg"></span>
+</div>
+
+<script src="/app.js" defer></script>
+</body>
+</html>
