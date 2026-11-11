@@ -3,7 +3,7 @@
 A modern Progressive Web App (PWA) designed for [Nutrceutical/Healthcare] use. 
 
 ## 🚀 Live Demo
-**[Click here to view the live app]((https://user-friendly-app-6c6f9c.netlify.app/))**
+**[Click here to view the live app]([(https://nutragrace.netlify.app/)])]**
 
 ## 📌 Problem Statement
 [This app helps to find out all health supplements which are manufacutred by India's 1st HPMC liquid filled capsules"(Nutra Grace)]
